@@ -23,8 +23,8 @@ ENV LD_LIBRARY_PATH=/root/go/src/github.com/ibmdb/clidriver/lib:$LD_LIBRARY_PATH
 ENV PATH=/root/nodejs/bin:$PATH
 RUN echo PATH
 RUN npm install ibm_db
-RUN go run connect.go > go-result.txt
-RUN node connect.js > node-result.txt
+#RUN go run connect.go > go-result.txt
+#RUN node connect.js > node-result.txt
 #RUN python3 connect.py > python-result.txt
 #RUN python3 emailtest.py
 ENTRYPOINT [ "python" ]
